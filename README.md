@@ -2,7 +2,7 @@
 
 More info on request.
 
-About the website, it's built with [Svelte](https://svelte.dev/) and [Tailwind](https://tailwindcss.com/).
+The website was built with [Svelte](https://svelte.dev/) and [Tailwind](https://tailwindcss.com/).
 
 ## Developing
 
