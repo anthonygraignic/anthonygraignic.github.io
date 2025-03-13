@@ -19,7 +19,7 @@
 		/>
 	</div>
 
-	<p class="mt-16"></p>
+	<p class="mt-16">Research Engineer</p>
 
 	<div class="mt-16 grid grid-cols-5 items-center justify-items-center gap-3 text-4xl">
 		<a
