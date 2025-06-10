@@ -1,4 +1,5 @@
 <script lang="ts">
+	import BitMask from '$lib/components/BitMask.svelte';
 	import Icon from '@iconify/svelte';
 	const email = 'firstname.lastname.fr@gmail.com';
 </script>
@@ -9,19 +10,17 @@
 </svelte:head>
 
 <main class="flex flex-col items-center justify-center justify-items-center p-4 font-mono">
-	<div class="mt-16 flex flex-col items-center justify-center justify-items-center">
+	<div class="mt-8 flex flex-col items-center justify-center justify-items-center md:mt-16">
 		<h1 class="text-center text-5xl font-bold md:text-justify">Anthony Graignic</h1>
 
-		<img
-			src="/12660783.png"
-			alt="A pixellised man with glasses"
-			class="mt-8 max-w-32 hover:animate-pulse"
-		/>
+		<div class="group relative mt-4 overflow-hidden md:mt-8">
+			<BitMask />
+		</div>
 	</div>
 
-	<p class="mt-16">Research Engineer</p>
+	<p class="mt-8 md:mt-16">Research Engineer</p>
 
-	<div class="mt-16 grid grid-cols-5 items-center justify-items-center gap-3 text-4xl">
+	<div class="mt-8 grid grid-cols-5 items-center justify-items-center gap-3 text-4xl md:mt-16">
 		<a
 			href="mailto:{email}"
 			target="_blank"

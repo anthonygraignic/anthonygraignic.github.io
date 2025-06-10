@@ -11,3 +11,11 @@ body {
 figcaption {
 	@apply mt-1 text-center text-xs text-gray-500 dark:text-gray-400;
 }
+
+.mask-rect {
+	@apply fill-black;
+}
+
+.bit {
+	@apply fill-gray-300;
+}
