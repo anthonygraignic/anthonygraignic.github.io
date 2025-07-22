@@ -41,14 +41,10 @@ jobs:
   deploy:
     needs: build_site
     runs-on: ubuntu-latest
-    outputs: # This exposes the CID output of the action to the rest of the workflow
-      cid: ${{ steps.deploy.outputs.cid }}
 
     permissions:
       pages: write
       id-token: write
-      contents: read
-      statuses: write
 
     environment:
       name: github-pages
@@ -58,12 +54,3 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-
-      - name: Deploy to IPFS
-        uses: ipfs/ipfs-deploy-action@v1
-        id: deploy
-        with:
-          path-to-deploy: build
-          storacha-key: ${{ secrets.STORACHA_KEY }}
-          storacha-proof: ${{ secrets.STORACHA_PROOF }}
-          github-token: ${{ github.token }}
