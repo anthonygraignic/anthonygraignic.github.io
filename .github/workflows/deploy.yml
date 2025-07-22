@@ -41,6 +41,8 @@ jobs:
   deploy:
     needs: build_site
     runs-on: ubuntu-latest
+    outputs: # This exposes the CID output of the action to the rest of the workflow
+      cid: ${{ steps.deploy.outputs.cid }}
 
     permissions:
       pages: write
@@ -58,7 +60,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Deploy to IPFS
-        uses: ipfs/ipfs-deploy-action@v0.3
+        uses: ipfs/ipfs-deploy-action@v1
         id: deploy
         with:
           path-to-deploy: build
