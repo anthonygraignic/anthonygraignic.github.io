@@ -54,3 +54,12 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Deploy to IPFS
+        uses: ipfs/ipfs-deploy-action@v0.3
+        id: deploy
+        with:
+          path-to-deploy: build
+          storacha-key: ${{ secrets.STORACHA_KEY }}
+          storacha-proof: ${{ secrets.STORACHA_PROOF }}
+          github-token: ${{ github.token }}
