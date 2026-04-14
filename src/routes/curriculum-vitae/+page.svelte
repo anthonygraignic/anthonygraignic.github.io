@@ -3,12 +3,20 @@
 
 	let work = [
 		{
+			company: 'Astéroïde',
+			// logo: '/logos/satt_grand_centre_logo.jpeg',
+			position: 'CTO',
+			website: 'https://trust4sign.fr',
+			startDate: '2025-11-22'
+			// endDate: '3000-01-01',
+		},
+		{
 			company: 'Clermont Auvergne Innovation',
 			logo: '/logos/satt_grand_centre_logo.jpeg',
 			position: 'Research Engineer',
 			website: 'https://www.clermontauvergneinnovation.com/',
-			startDate: '2024-05-21'
-			// endDate: '2025-11-21',
+			startDate: '2024-05-21',
+			endDate: '2025-11-21'
 		},
 		{
 			company: 'UCA',
